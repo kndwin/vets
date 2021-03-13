@@ -1,0 +1,22 @@
+@import 'styles/colors';
+
+.primary {
+	background: $primary; 
+	color: white
+}
+
+.default {
+	background: $neutral; 
+	color: white
+}
+
+.button {
+	border: 1px solid #000;
+	font-family: Cantarell;
+	padding: 1rem; 
+	margin: 0.5rem 0; 
+	font-size: 14pt;
+	font-weight: bold;
+	border-radius: 5px;
+	width: fit-content;
+}
