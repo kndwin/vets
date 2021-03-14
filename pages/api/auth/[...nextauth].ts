@@ -55,9 +55,7 @@ export default NextAuth({
 	},
 	callbacks: {
 		async redirect(url, baseUrl) {
-			return url.startsWith(baseUrl)
-				? url
-				: baseUrl
+			return baseUrl
 		},
 	},
 	debug: true,

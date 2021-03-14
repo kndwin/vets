@@ -7,12 +7,7 @@ export default function Index() {
 
   return (
     <Layout>
-				{!session && <>
-					<Welcome/>
-				</>}
-				{session && <>
-					<Dashboard/>	
-				</>}
+				{!session ? <Welcome/> : <Dashboard/>}
 		</Layout>
   )
 }

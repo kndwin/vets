@@ -17,19 +17,18 @@ export default function Layout ({
 	return (
 		<div className={styles.container}>
 			<div className={styles.content}>
-			<header className={styles.header}>
 				{!isSignIn && !session &&
-					<>
-						<h1>
+					<header className={styles.header}>
+						<p className={styles.logoText}>
 							OrionNT
-						</h1>
+						</p>
 						<Button onClick={() => signIn()}>
 							Sign in
 						</Button>
-					</>
+					</header>
 				}
 				{!isSignIn && session &&
-					<>
+					<header className={styles.header}>
 						<div className={styles.leftSide}>
 							<Link href="/">
 								<a>Dashboard</a>
@@ -43,13 +42,21 @@ export default function Layout ({
 								src={session.user.image} 
 								alt="Profile image" 
 							/>
+							<div>
 							<Button onClick={() => signOut()}>
 								Sign out
 							</Button>
+							</div>
 						</div>
-					</>
+					</header>
 				}
-				</header>
+				{isSignIn &&
+					<header className={styles.header}>
+						<p className={styles.logoText}>
+							OrionNT
+						</p>
+					</header>
+				}
 				<main className={styles.main}>
 					{children}
 				</main>

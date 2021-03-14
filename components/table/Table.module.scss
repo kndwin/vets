@@ -1,0 +1,16 @@
+.border {
+	border: 5px solid #000;
+	height: 100%;
+	margin: 2rem 0;
+	padding: 1rem; 
+}
+
+.row {
+	display: flex;
+	align-items: center;
+
+	.rowItem {
+		padding: 1rem; 
+		font-size: 16pt;
+	}
+}

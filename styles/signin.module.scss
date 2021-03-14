@@ -1,14 +1,16 @@
+@import 'styles/colors';
+
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-	max-height: 500px;
 }
 
 .form {
 	display: flex;
+	height: 100%;
 	flex-direction: column;
 	input {
 		font-size: 14pt;
@@ -16,4 +18,17 @@
 		margin: 1rem 0;
 		border: 1px solid #000;
 	}
+}
+
+.submitCancel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cancel {
+	font-size: 16pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: $neutral;
 }

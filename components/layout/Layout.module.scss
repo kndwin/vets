@@ -5,7 +5,7 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 100vh;
+	height: 100%; 
 }
 
 .content {
@@ -19,11 +19,13 @@
 }
 
 .header {
-	padding: 2rem 0;
+	padding: 2rem 0 1rem 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	border-bottom: 4px solid $neutral;
 	width: 100%;
+	height: 5rem;
 
 	.rightSide {
 		width: fit-content; 	
@@ -49,8 +51,14 @@
 
 }
 
+.headerSignIn {
+	height: 5rem;
+}
+
 .main {
 	flex: 1;
+	height: 100%;
+	width: 100%;
 }
 
 .icon {
@@ -59,4 +67,9 @@
 	border-radius: 50%;
 	border: 3px solid $neutral;
 	margin: 0 2rem;
+}
+
+.logoText {
+	font-weight: bold; 
+	font-size: 24pt;
 }
